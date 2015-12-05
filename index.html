@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <!-- Load Typescript files  -->
+  <script src="https://npmcdn.com/typescript@1.6.2/lib/typescript.js"></script>
+  <!-- Load system js files -->
+  <script src="https://npmcdn.com/systemjs@0.19.6/dist/system.js"></script>
+  <!-- Load angular 2 files -->
+  <script src="https://npmcdn.com/angular2@2.0.0-alpha.46/bundles/angular2.js"></script>
+  <script>
+ 
+    /*
+	Config the transpiler to be typescript. 
+        This will convert our typescript into 
+        javascript inside our browser!
+    */
+    System.config({transpiler: 'typescript'});
+
+    //load our hello-world component
+    System.import('hello-world.js'); 
+  </script>
+</head>
+<body>
+  <!-- User defined component  -->
+  <hello-world></hello-world>
+</body>
+</html>
+
