@@ -2,18 +2,16 @@
 <html>
 <head>
 
-  <!-- Load Typescript files  -->
-  <script src="https://npmcdn.com/typescript@1.6.2/lib/typescript.js"></script>
-  <!-- Load system js files -->
-  <script src="https://npmcdn.com/systemjs@0.19.6/dist/system.js"></script>
-  <!-- Load angular 2 files -->
-  <script src="https://npmcdn.com/angular2@2.0.0-alpha.47/bundles/angular2.js"></script>
+  <!-- Load depedencies  -->
+  <script src="https://npmcdn.com/angular2@2.0.0-beta.0/bundles/angular2-polyfills.js"></script>
+  <script src="https://npmcdn.com/typescript@1.7.5/lib/typescript.js"></script>
+  <script src="https://npmcdn.com/systemjs@0.19.8/dist/system.src.js"></script>
+  <script src="https://npmcdn.com/rxjs@5.0.0-beta.0/bundles/Rx.js"></script>
+  <script src="https://npmcdn.com/angular2@2.0.0-beta.0/bundles/angular2.dev.js"></script>
   <script>
  
     /*
 	Config the transpiler to be typescript. 
-        This will convert our typescript into 
-        javascript inside our browser!
     */
     System.config({transpiler: 'typescript'});
 

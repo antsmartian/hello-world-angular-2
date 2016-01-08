@@ -1,5 +1,6 @@
 //import the Component and bootsrtap from angular fw
-import {Component, bootstrap} from 'angular2/angular2';
+import {bootstrap} from 'angular2/platform/browser';
+import {Component} from 'angular2/core';
 
 /*
   Placing this annotations above our
